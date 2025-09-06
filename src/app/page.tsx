@@ -1,3 +1,4 @@
+// src/app/page.tsx
 import Link from "next/link";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
@@ -5,15 +6,21 @@ import { projects } from "@/data/projects";
 export default function HomePage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12">
-      <section className="rounded-3xl border bg-white p-10 shadow-sm">
+      <section className="rounded-3xl border border-[var(--border)] bg-[var(--surface)] p-10 shadow-sm">
         <h1 className="text-3xl sm:text-4xl font-bold">Hi, I’m Hazirah</h1>
-        <p className="mt-2 max-w-2xl text-gray-600">
+        <p className="mt-2 max-w-2xl text-[var(--muted)]">
           Computer Software @ Hanyang • Cybersecurity • AI/ML • Mobile Apps
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link className="rounded-xl border px-4 py-2" href="/projects">Projects</Link>
-          <Link className="rounded-xl border px-4 py-2" href="/about">About</Link>
-          <Link className="rounded-xl border px-4 py-2" href="/contact">Contact</Link>
+          <Link className="rounded-xl bg-[var(--primary)] px-4 py-2 text-white hover:opacity-90" href="/projects">
+            Projects
+          </Link>
+          <Link className="rounded-xl border border-[var(--border)] px-4 py-2 hover:bg-[var(--card)]" href="/about">
+            About
+          </Link>
+          <Link className="rounded-xl border border-[var(--border)] px-4 py-2 hover:bg-[var(--card)]" href="/contact">
+            Contact
+          </Link>
         </div>
       </section>
 
