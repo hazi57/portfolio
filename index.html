@@ -1,0 +1,37 @@
+# create a simple homepage
+@"
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hazirah | Portfolio</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 0; padding: 2rem; }
+    .hero { max-width: 900px; margin: 0 auto; }
+    h1 { margin-bottom: .25rem; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Hi, I’m Hazirah</h1>
+    <p>Computer Software @ Hanyang • Cybersecurity • AI/ML • Mobile Apps</p>
+
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card"><strong>Deepfake Voice Detection</strong><br/>PyTorch, Mel Spectrograms</div>
+      <div class="card"><strong>PULSE – Study with Rhythm</strong><br/>React Native, Expo</div>
+      <div class="card"><strong>LastBite</strong><br/>Food expiry & meal planner</div>
+      <div class="card"><strong>ImpactIQ (UNDP Hackathon)</strong><br/>React, FastAPI</div>
+    </div>
+
+    <h2>Contact</h2>
+    <p><a href="mailto:youremail@example.com">youremail@example.com</a> ·
+       <a href="https://github.com/hazi57">GitHub</a> ·
+       <a href="https://www.linkedin.com/in/your-link">LinkedIn</a></p>
+  </div>
+</body>
+</html>
+"@ | Set-Content -Encoding utf8 index.html
