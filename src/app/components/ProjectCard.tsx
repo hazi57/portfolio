@@ -25,3 +25,4 @@ export default function ProjectCard({ p }: { p: Project }) {
     </div>
   );
 }
+// src/components/ProjectCard.tsx --- IGNORE ---
