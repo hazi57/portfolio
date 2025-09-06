@@ -1,3 +1,4 @@
+// src/components/ProjectCard.tsx
 import Link from "next/link";
 import type { Project } from "@/data/projects";
 
